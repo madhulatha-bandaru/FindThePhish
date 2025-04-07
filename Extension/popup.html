@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phishing Detector</title>
+    <link rel="stylesheet" href="popup.css" />
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>FindThePhish</h1>
+
+      <div class="current-url-section">
+        <h2>Current Page</h2>
+        <input type="text" id="url-input" readonly />
+        <div id="check-result" class="result"></div>
+      </div>
+
+      <div class="manual-check-section">
+        <h2>Check Another URL</h2>
+        <form id="url-form">
+          <input type="text" id="url-input1" placeholder="Enter URL to check" />
+          <button type="submit">Check URL</button>
+        </form>
+        <div id="manual-result" class="result"></div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
